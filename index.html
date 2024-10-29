@@ -3,93 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Kylian - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+    publicKey: "WKvB-LjdJ59-FE2rh",
+   });
+   })();
+   </script>
 </head>
-<body class="bg-gray-100 text-gray-900">
-
-    <!-- Section Header -->
-    <header class="bg-gray-900 text-white py-6">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-bold">Mon Portfolio</h1>
-            <p class="text-lg mt-2">Développeur Web & Designer</p>
+<body>
+    <header>
+        <div class="container">
+            <div id="currentTime"></div> <!-- Élément pour l'heure -->
+            <h1>Kylian BARBIERI</h1>
+            <p>Étudiant en 2ème année de cycle préparatoire intégré | Spécialité informatique</p>
+            <nav class="menu">
+                <ul>
+                  <li><a href="#Projets">Projets</a></li>
+                  <li><a href="#Competences">Compétences</a></li>
+                  <li><a href="#Apropos">A propos</a></li>
+                  <li><a href="#MeContacter">Me contacter</a></li>
+                </ul>
+              </nav>
         </div>
     </header>
-
-    <!-- Section Introduction -->
-    <section id="about" class="py-12">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-6">À propos de moi</h2>
-            <p class="text-lg leading-relaxed text-gray-700">
-                Je suis un développeur web passionné par la création de sites et applications modernes et performants. J'aime transformer les idées en expériences numériques interactives.
-            </p>
-        </div>
-    </section>
-
-    <!-- Section Projects -->
-    <section id="projects" class="py-12 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-6">Mes Projets</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/400" alt="Projet 1" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold">Projet 1</h3>
-                        <p class="text-gray-700 mt-2">Description brève de ce projet.</p>
-                    </div>
+    
+    
+    
+    <main class="container">
+        <section id="Projets" class="section-box">
+            <h2>Projets</h2>
+            <div id="projectContainer">
+                <div class="project-box">
+                    <h3>Systèmes embarqués</h3>
+                    <p>A compléter</p>
+                    <p>Technologies utilisées : A compléter</p>
                 </div>
-
-                <!-- Project 2 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/400" alt="Projet 2" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold">Projet 2</h3>
-                        <p class="text-gray-700 mt-2">Description brève de ce projet.</p>
-                    </div>
+                <div class="project-box">
+                    <h3>StrongBox3000</h3>
+                    <p>A compléter</p>
+                    <p>Technologies utilisées : A compléter</p>
                 </div>
-
-                <!-- Project 3 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/400" alt="Projet 3" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold">Projet 3</h3>
-                        <p class="text-gray-700 mt-2">Description brève de ce projet.</p>
-                    </div>
+                <div class="project-box">
+                    <h3>Escape No Game</h3>
+                    <p>A compléter</p>
+                    <p>Technologies utilisées : A compléter</p>
+                </div>
+                <div class="project-box">
+                    <h3>Portfolio</h3>
+                    <p>A compléter</p>
+                    <p>Technologies utilisées : A compléter</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Section Contact -->
-    <section id="contact" class="py-12 bg-gray-900 text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-6">Me Contacter</h2>
-            <p class="text-lg mb-6">Envoyez-moi un message pour discuter de vos projets ou de potentiels partenariats.</p>
-            <form class="w-full max-w-lg mx-auto">
-                <div class="mb-4">
-                    <input class="w-full p-3 rounded-lg text-gray-900" type="text" placeholder="Votre nom">
-                </div>
-                <div class="mb-4">
-                    <input class="w-full p-3 rounded-lg text-gray-900" type="email" placeholder="Votre email">
-                </div>
-                <div class="mb-4">
-                    <textarea class="w-full p-3 rounded-lg text-gray-900" placeholder="Votre message" rows="5"></textarea>
-                </div>
-                <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg">
-                    Envoyer
-                </button>
+        <section id="Competences" class="section-box">
+            <h2>Compétences</h2>
+            <div class="skills-container">
+                <div class="skill-box">Gestion de projet</div>
+                <div class="skill-box">Pack Office : <br>Word, Excel...</div>
+                <div class="skill-box">Programmation : <br>Python, C, C++</div>
+                <div class="skill-box">Développement web : <br>HTML, CSS, Javascript</div>
+                <div class="skill-box">Systèmes embarqués : <br>Microcontrôleurs (Arduino UNO...) </div>
+                <div class="skill-box">Bases de données : <br>MySQL</div>
+                <div class="skill-box">Outils de versionnage : <br>Git, GitHub</div>
+            </div>
+        </section>
+
+        <section id="Apropos" class="section-box">
+            <h2>À Propos</h2>
+            <p>A compléter</p>
+            <p>A compléter</p>
+            <p>A compléter</p>
+        </section>
+
+        <section id="MeContacter" class="section-box">
+            <h2>Me Contacter</h2>
+            <div class="arrow-container">
+                <i class="fas fa-arrow-down"></i>
+            </div>            
+            <form id="contactForm">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" onclick="sendMail()">Envoyer</button>
             </form>
-        </div>
-    </section>
+            <div id="formMessage"></div>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    <footer>
+    <div class="footer-content">
+        <button id="backToTopButton">Retour en haut de la page</button>
+        <div>
+            <a href="https://www.linkedin.com/in/kylian-barbieri-26a850297" target="_blank" aria-label="Mon LinkedIn">
+                <i class="fa-brands fa-linkedin" style="font-size: 32px;"></i>
+            </a>
         </div>
-    </footer>
-
+        <div class="footer-main-content">
+            <p>&copy; 2024 Kylian BARBIERI. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+    
+    
 </body>
 </html>
-"# Portfolio" 
