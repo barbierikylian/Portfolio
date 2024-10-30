@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+head {
+    color: #001f3f;
+}
 html {
     scroll-behavior: smooth; /* Active le défilement fluide */
 }
