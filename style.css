@@ -17,27 +17,7 @@ body {
 body {
     font-family: 'Montserrat', sans-serif;
 }
-.banner {
-    position: relative;
-    width: 100%;
-    height: 300px; /* Ajuste la hauteur selon ton besoin */
-    overflow: hidden;
-    animation: fadeIn 1s forwards;
-}
 
-.banner img {
-    width: 100%;
-    height: auto;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
 .banner {
     width: 100%;
