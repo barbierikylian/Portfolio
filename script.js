@@ -5,24 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     updateTime(); // Appel initial pour afficher l'heure
     setInterval(updateTime, 1000); // Mettre à jour l'heure toutes les secondes
 });
-window.onload = function() {
-    setTimeout(function() {
-        const banner = document.getElementById('banner');
-        banner.style.animation = 'fadeOut 1s forwards';
-        setTimeout(function() {
-            banner.style.display = 'none'; // Masque la bannière après la disparition
-        }, 1000); // Doit correspondre à la durée de l'animation de disparition
-    }, 3000); // Temps d'affichage de la bannière en millisecondes (ici 3 secondes)
-};
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
 
 // Fonction pour mettre à jour l'heure
 function updateTime() {
