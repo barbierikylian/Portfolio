@@ -5,9 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     updateTime(); // Appel initial pour afficher l'heure
     setInterval(updateTime, 1000); // Mettre à jour l'heure toutes les secondes
 
-    // Appel de la fonction pour gérer l'affichage de la bannière
-    displayBanner();
-
     // Écouteur d'événements pour le défilement
     window.addEventListener('scroll', () => {
         const scrollPosition = window.scrollY; // Position de défilement
@@ -25,14 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Fonction pour afficher la bannière pendant 3 secondes
-function displayBanner() {
-    const banner = document.querySelector('.banner');
-    setTimeout(() => {
-        banner.classList.add('hidden'); // Masque la bannière après 3 secondes
-    }, 3000);
-}
-
 // Fonction pour mettre à jour l'heure
 function updateTime() {
     const now = new Date();
@@ -40,9 +29,6 @@ function updateTime() {
     const formattedTime = now.toLocaleTimeString('fr-FR', options); // Format français
     document.getElementById('currentTime').innerText = formattedTime;
 }
-
-// ... [Le reste de votre code JavaScript reste inchangé]
-
 
 // Animations pour les sections
 function initAnimations() {
@@ -85,7 +71,6 @@ function setupFormValidation() {
     });
 }
 
-
 // Effets de survol pour les compétences
 function setupSkillHoverEffects() {
     const skillBoxes = document.querySelectorAll('.skill-box');
@@ -121,6 +106,8 @@ backToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+// Fonction pour envoyer l'email
 function sendMail() {
     // Récupérer les valeurs des champs
     let name = document.getElementById("name").value.trim();
