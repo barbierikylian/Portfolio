@@ -324,26 +324,36 @@ footer {
 .section-box {
     animation: fadeIn 0.5s ease-in-out;
 }
-.section-box {
-    padding: 20px;
+/* Styles pour la section "À Propos" */
+.section-boxx {
+    display: flex; /* Active le flexbox */
+    flex-direction: column; /* Aligne les éléments verticalement */
+    align-items: center; /* Centre le contenu horizontalement */
+    justify-content: center; /* Centre le contenu verticalement si nécessaire */
+    padding: 20px; /* Espacement interne */
     background-color: #f9f9f9; /* Couleur de fond pour la section */
     border-radius: 10px; /* Coins arrondis */
     margin-bottom: 20px; /* Espacement entre les sections */
+    text-align: center; /* Centre le texte */
 }
 
+/* Styles pour le bouton de téléchargement */
 .btn-download {
-    display: inline-block;
-    padding: 10px 20px; /* Espacement intérieur */
+    display: inline-block; /* Définit le bouton comme élément en ligne pour centrer */
+    padding: 10px 20px; /* Espacement interne */
     background-color: #4CAF50; /* Couleur de fond du bouton */
     color: white; /* Couleur du texte */
     text-decoration: none; /* Pas de soulignement */
     border-radius: 5px; /* Coins arrondis pour le bouton */
     transition: background-color 0.3s; /* Transition pour le changement de couleur */
+    margin-top: 10px; /* Espace au-dessus du bouton */
 }
 
+/* Couleur du bouton au survol */
 .btn-download:hover {
-    background-color: #45a049; /* Couleur du bouton au survol */
+    background-color: #45a049;
 }
+
 
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
