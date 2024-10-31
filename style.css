@@ -210,21 +210,25 @@ h2 {
     padding: 10px;
     margin: 5px 0;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Ajout de box-shadow pour l'animation */
-    animation: fadeIn 0.5s forwards; /* Animation pour afficher les boxes */
-    opacity: 0; /* Initialement caché */
 }
 
-.detail-box:nth-child(1) {
-    animation-delay: 0.2s; /* Délai pour la première box */
-}
-
-.detail-box:nth-child(2) {
-    animation-delay: 0.4s; /* Délai pour la deuxième box */
-}
-
-.project-box:hover .detail-box {
+.detail-box:hover {
     transform: translateY(-3px);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajout d'un effet de transition */
+.details-container .detail-box {
+    opacity: 0; /* Cacher par défaut */
+    animation: fadeIn 0.5s forwards; /* Animation pour afficher les boxes */
+}
+
+.details-container .detail-box:nth-child(1) {
+    animation-delay: 0.1s; /* Délai pour la première box */
+}
+
+.details-container .detail-box:nth-child(2) {
+    animation-delay: 0.2s; /* Délai pour la deuxième box */
 }
 
 /* Animation de fondu */
@@ -238,7 +242,6 @@ h2 {
         transform: translateY(0);
     }
 }
-
 
 
 
