@@ -5,34 +5,27 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Active le défilement fluide */
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Fond plus clair */
     color: #333;
 }
 
-/* Bannière */
 .banner {
     width: 100%;
     height: 400px;
+    background-image: url('banniere.png');
+    background-size: cover;
+    background-position: center;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: linear-gradient(45deg, #001f3f, #007bff, #00d9ff);
-    background-size: 600% 600%;
-    animation: gradientAnimation 10s ease infinite;
-}
-
-@keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
 }
 
 .banner::before {
@@ -42,7 +35,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* Couche sombre pour le texte */
 }
 
 .banner-content {
@@ -51,24 +44,25 @@ body {
     z-index: 1;
 }
 
-.banner-content h1 {
+.banner h1 {
     font-size: 3rem;
     font-weight: bold;
     color: #00d9ff;
     text-shadow: 2px 2px 10px rgba(0, 217, 255, 0.8);
     margin-bottom: 10px;
-    animation: textFadeIn 2s ease-in-out;
 }
 
-.banner-content p {
+.banner p {
     font-size: 1.2rem;
     color: #ffffff;
     text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
-    animation: textFadeIn 2s 1s ease-in-out; /* avec 1s de décalage */
 }
 
-/* Animation */
-@keyframes textFadeIn {
+.banner-content h1, .banner-content p {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
     0% {
         opacity: 0;
         transform: translateY(20px);
@@ -85,12 +79,12 @@ body {
     padding: 20px;
 }
 
-/* Header */
 header {
-    background-color: #001f3f;
+    background-color: #001f3f; /* Couleur sombre pour le header */
     color: white;
     padding: 20px 0;
     text-align: center;
+    position: relative;
 }
 
 header h1 {
@@ -103,9 +97,8 @@ header p {
     margin-bottom: 20px;
 }
 
-/* Boutons */
 button {
-    background-color: #ff4136;
+    background-color: #ff4136; /* Couleur rouge pour les boutons */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -116,50 +109,49 @@ button {
 }
 
 button:hover {
-    background-color: #ff851b;
+    background-color: #ff851b; /* Couleur orange au survol */
     transform: scale(1.05);
 }
 
-/* Menu de navigation */
 nav {
-    background-color: #001f3f;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
+    background-color: #001f3f; /* Couleur de fond */
+    padding: 10px; /* Espacement interne */
+    display: flex; /* Utilise flexbox */
+    justify-content: center; /* Centre le contenu horizontalement */
 }
 
 nav ul {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+    list-style-type: none; /* Enlève les puces */
+    margin: 0; /* Enlève les marges */
+    padding: 0; /* Enlève le padding */
+    display: flex; /* Affiche les éléments en ligne */
 }
 
 nav li {
-    margin: 0 10px;
+    margin: 0 10px; /* Espacement entre les liens */
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 50px;
-    background-color: rgba(255, 255, 255, 0.2);
-    transition: background-color 0.3s, color 0.3s;
+    color: white; /* Couleur des liens */
+    text-decoration: none; /* Enlève le soulignement */
+    padding: 10px 20px; /* Espacement interne */
+    border-radius: 50px; /* Arrondir les coins pour créer des ovales */
+    background-color: rgba(255, 255, 255, 0.2); /* Couleur de fond avec transparence */
+    transition: background-color 0.3s, color 0.3s; /* Ajoute une transition douce */
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-    color: #00BFFF;
+    background-color: rgba(255, 255, 255, 0.4); /* Couleur de fond au survol */
+    color: #00BFFF; /* Couleur des liens au survol */
 }
 
-/* Sections */
 .section-box {
-    background-color: white;
+    background-color: white; /* Fond blanc pour les sections */
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 20px 0;
+    transition: transform 0.3s ease;
     opacity: 1;
     transform: translateY(20px);
     animation: fadeIn 1s forwards;
@@ -171,14 +163,13 @@ nav a:hover {
 
 h2 {
     margin-bottom: 15px;
-    color: #001f3f;
+    color: #001f3f; /* Couleur du texte des titres */
     font-size: 2em;
     text-align: center;
 }
 
-/* Projets */
 .project-box {
-    background-color: #f8f8f8;
+    background-color: #f8f8f8; /* Couleur grise claire pour les projets */
     border-radius: 8px;
     padding: 15px;
     margin: 10px;
@@ -189,7 +180,6 @@ h2 {
     transform: scale(1.03);
 }
 
-/* Compétences */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -197,22 +187,20 @@ h2 {
 }
 
 .skill-box {
-    background-color: #007bff;
+    background-color: #007bff; /* Couleur bleue pour les compétences */
     color: white;
     border-radius: 5px;
     padding: 10px;
     margin: 5px;
     text-align: center;
-    flex: 1 0 20%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 0 20%; /* Flexibilité sur les largeurs */
+    transition: transform 0.3s ease;
 }
 
 .skill-box:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre ajoutée au survol */
 }
 
-/* Formulaire */
 form {
     display: flex;
     flex-direction: column;
@@ -231,52 +219,37 @@ form input, form textarea {
     border-radius: 5px;
 }
 
-/* Flèches animées */
 .arrow-container {
     text-align: center;
     margin-bottom: 10px;
 }
 
 .arrow-container i {
-    font-size: 2em;
-    color: #007bff;
-    animation: bounce 1s infinite;
+    font-size: 2em; /* Taille de la flèche */
+    color: #007bff; /* Couleur de la flèche */
+    animation: bounce 1s infinite; /* Animation de rebond */
 }
 
+/* Animation de rebond */
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-10px); /* Décale vers le haut */
     }
 }
 
-/* Bouton de retour en haut */
-#backToTopButton {
-    background-color: #ff4136;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    position: fixed; /* Position fixe */
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000; /* Pour le mettre au-dessus des autres éléments */
+form button {
+    margin-top: 20px;
 }
 
-#backToTopButton:hover {
-    background-color: #ff851b;
-}
-
-/* Pied de page */
 footer {
-    background-color: #001f3f;
+    background-color: #001f3f; /* Couleur sombre pour le footer */
     color: white;
     padding: 20px;
     margin-top: 20px;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -289,11 +262,40 @@ footer {
     gap: 10px;
 }
 
+#backToTopButton {
+    background-color: #ff4136; /* Couleur rouge pour le bouton retour */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#backToTopButton:hover {
+    background-color: #ff851b; /* Couleur orange au survol */
+}
+
 .footer-main-content {
     text-align: center;
 }
 
-/* Animation pour les compétences */
+.footer-contact {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-contact:hover {
+    text-decoration: underline;
+}
+
+/* Animation for sections */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -305,26 +307,30 @@ footer {
     }
 }
 
-/* Media Queries */
+.section-box {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Media Queries for responsiveness */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2em;
     }
 
     .skill-box {
-        flex: 1 0 45%;
+        flex: 1 0 45%; /* 2 compétences par ligne */
     }
 
     .banner h1 {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* Réduit la taille sur mobile */
     }
 
     .banner p {
-        font-size: 1rem;
+        font-size: 1rem; /* Réduit la taille sur mobile */
     }
 
     .project-box, .section-box {
-        margin: 10px;
+        margin: 10px; /* Réduit les marges sur mobile */
     }
 }
 
@@ -334,14 +340,14 @@ footer {
     }
 
     .skill-box {
-        flex: 1 0 90%;
+        flex: 1 0 90%; /* 1 compétence par ligne */
     }
 
     .banner h1 {
-        font-size: 2rem;
+        font-size: 2rem; /* Encore plus petit sur mobile */
     }
 
     .banner p {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Encore plus petit sur mobile */
     }
 }
