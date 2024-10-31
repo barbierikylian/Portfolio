@@ -41,6 +41,7 @@ function updateTime() {
     document.getElementById('currentTime').innerText = formattedTime;
 }
 
+
 // Animations pour les sections
 function initAnimations() {
     const sections = document.querySelectorAll('.section-box');
