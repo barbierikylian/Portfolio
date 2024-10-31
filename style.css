@@ -324,18 +324,24 @@ footer {
 .section-box {
     animation: fadeIn 0.5s ease-in-out;
 }
+/* Styles pour la section */
 .section-boxx {
     display: flex; /* Active le flexbox */
     flex-direction: column; /* Aligne les éléments verticalement */
     align-items: center; /* Centre horizontalement */
-    justify-content: center; /* Centre verticalement si nécessaire */
-    padding: 20px;
+    justify-content: center; /* Centre verticalement */
+    padding: 20px; /* Espacement interne */
     background-color: #f9f9f9; /* Couleur de fond pour la section */
     border-radius: 10px; /* Coins arrondis */
     margin-bottom: 20px; /* Espacement entre les sections */
     text-align: center; /* Centre le texte */
+    width: 100%; /* Largeur de la section */
+    max-width: 600px; /* Largeur maximale pour centrer dans la page */
+    margin-left: auto; /* Centre horizontalement */
+    margin-right: auto; /* Centre horizontalement */
 }
 
+/* Styles pour le bouton de téléchargement */
 .btn-download {
     display: inline-block; /* Permet au bouton d'être centré */
     padding: 10px 20px; /* Espacement intérieur */
@@ -350,7 +356,6 @@ footer {
 .btn-download:hover {
     background-color: #45a049; /* Couleur du bouton au survol */
 }
-
 
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
