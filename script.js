@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function displayBanner() {
     const banner = document.querySelector('.banner');
     setTimeout(() => {
-        banner.classList.add('hidden'); // Masque la bannière après 3 secondes avec un effet de fondu
+        banner.classList.add('hidden'); // Masque la bannière après 3 secondes
     }, 3000);
 }
 
@@ -40,6 +40,9 @@ function updateTime() {
     const formattedTime = now.toLocaleTimeString('fr-FR', options); // Format français
     document.getElementById('currentTime').innerText = formattedTime;
 }
+
+// ... [Le reste de votre code JavaScript reste inchangé]
+
 
 // Animations pour les sections
 function initAnimations() {
