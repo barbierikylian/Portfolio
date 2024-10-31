@@ -189,7 +189,7 @@ h2 {
     border: 1px solid #ccc;
     border-radius: 8px;
     transition: transform 0.3s ease;
-    background-color: #0d7974; /* Ajout d'un fond blanc pour le contraste */
+    background-color: #ffffff; /* Ajout d'un fond blanc pour le contraste */
 }
 
 .project-box:hover {
