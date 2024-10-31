@@ -4,7 +4,34 @@ document.addEventListener("DOMContentLoaded", () => {
     setupSkillHoverEffects();
     updateTime(); // Appel initial pour afficher l'heure
     setInterval(updateTime, 1000); // Mettre à jour l'heure toutes les secondes
+
+    // Appel de la fonction pour gérer l'affichage de la bannière
+    displayBanner();
+
+    // Écouteur d'événements pour le défilement
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY; // Position de défilement
+        const banner = document.querySelector('.banner'); // Sélectionne la bannière
+
+        // Applique la transformation en fonction de la position de défilement
+        banner.style.transform = `translateY(${scrollPosition * 0.5}px)`; // Ajuste le facteur (0.5) pour modifier l'intensité de l'effet
+
+        // Vérifie si la bannière est complètement défilée
+        if (scrollPosition > banner.offsetHeight) {
+            // Fait défiler vers la section de mini présentation
+            const miniPresentation = document.getElementById('mini-presentation');
+            miniPresentation.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
 });
+
+// Fonction pour afficher la bannière pendant 3 secondes
+function displayBanner() {
+    const banner = document.querySelector('.banner');
+    setTimeout(() => {
+        banner.classList.add('hidden'); // Masque la bannière après 3 secondes
+    }, 3000);
+}
 
 // Fonction pour mettre à jour l'heure
 function updateTime() {
@@ -13,13 +40,9 @@ function updateTime() {
     const formattedTime = now.toLocaleTimeString('fr-FR', options); // Format français
     document.getElementById('currentTime').innerText = formattedTime;
 }
-window.addEventListener('scroll', () => {
-    const scrollPosition = window.scrollY; // Position de défilement
-    const banner = document.querySelector('.banner'); // Sélectionne la bannière
 
-    // Applique la transformation en fonction de la position de défilement
-    banner.style.transform = translateY(${scrollPosition * 0.5}px); // Ajuste le facteur (0.5) pour modifier l'intensité de l'effet
-});
+// ... [Le reste de votre code JavaScript reste inchangé]
+
 
 // Animations pour les sections
 function initAnimations() {
