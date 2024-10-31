@@ -15,7 +15,7 @@ function updateTime() {
 }
 window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY; // Position de défilement
-    const banner = document.querySelector('.banner::before');
+    const banner = document.querySelector('.banner'); // Sélectionne la bannière
 
     // Applique la transformation en fonction de la position de défilement
     banner.style.transform = `translateY(${scrollPosition * 0.5}px)`; // Ajuste le facteur (0.5) pour modifier l'intensité de l'effet
