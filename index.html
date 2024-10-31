@@ -56,22 +56,8 @@
                     <textarea id="technologies-utilisees" rows="4" cols="50" placeholder="A compléter"></textarea>
                     </div>
                     <div>
-                    <button onclick="submitContent()">Soumettre</button>
                     </div>
                     <div id="submitted-content" style="margin-top: 20px;"></div>
-
-                    <script>
-                    function submitContent() {
-                    const systemesEmbarques = document.getElementById('systemes-embarques').value;
-                    const technologiesUtilisees = document.getElementById('technologies-utilisees').value;
-
-                    document.getElementById('submitted-content').innerHTML = `
-                    <h4>Contenu soumis :</h4>
-                    <p><strong>Systèmes embarqués :</strong> ${systemesEmbarques}</p>
-                    <p><strong>Technologies utilisées :</strong> ${technologiesUtilisees}</p>
-                    `;
-                    }
-                    </script>
 
                 </div>
                 <div class="project-box">
@@ -119,6 +105,7 @@
             </div>            
             <form id="contactForm">
                 <label for="name">Nom :</label>
+                <textarea  rows="4" cols="50" placeholder="Nom"></textarea>
                 <input type="text" id="name" name="name" required>
                 <label for="email">Email :</label>
                 <input type="email" id="email" name="email" required>
