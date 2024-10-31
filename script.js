@@ -13,13 +13,6 @@ function updateTime() {
     const formattedTime = now.toLocaleTimeString('fr-FR', options); // Format français
     document.getElementById('currentTime').innerText = formattedTime;
 }
-window.addEventListener('scroll', () => {
-    const scrollPosition = window.scrollY; // Position de défilement
-    const banner = document.querySelector('.banner'); // Sélectionne la bannière
-
-    // Applique la transformation en fonction de la position de défilement
-    banner.style.transform = `translateY(${scrollPosition * 0.5}px)`; // Ajuste le facteur (0.5) pour modifier l'intensité de l'effet
-});
 
 // Animations pour les sections
 function initAnimations() {
