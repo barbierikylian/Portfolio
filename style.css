@@ -333,7 +333,7 @@ footer {
 }
 
 .btn-download {
-    display: inline-block; /* Permet au bouton d'être centré */
+    display: flex; /* Permet au bouton d'être centré */
     padding: 10px 20px; /* Espacement intérieur */
     background-color: #4CAF50; /* Couleur de fond du bouton */
     color: white; /* Couleur du texte */
