@@ -324,28 +324,6 @@ footer {
 .section-box {
     animation: fadeIn 0.5s ease-in-out;
 }
-.section-boxx {
-    padding: 20px;
-    background-color: #f9f9f9; /* Couleur de fond pour la section */
-    border-radius: 10px; /* Coins arrondis */
-    margin-bottom: 20px; /* Espacement entre les sections */
-}
-
-.btn-download {
-    display: inline-block;
-    padding: 10px 20px; /* Espacement intérieur */
-    background-color: #4CAF50; /* Couleur de fond du bouton */
-    color: white; /* Couleur du texte */
-    text-decoration: none; /* Pas de soulignement */
-    border-radius: 5px; /* Coins arrondis pour le bouton */
-    transition: background-color 0.3s; /* Transition pour le changement de couleur */
-}
-
-.btn-download:hover {
-    background-color: #45a049; /* Couleur du bouton au survol */
-}
-
-
 
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
