@@ -9,14 +9,12 @@ html {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Choix de la police */
     line-height: 1.6;
     background-color: #f4f4f4; /* Fond plus clair */
     color: #333;
 }
-body {
-    font-family: 'Montserrat', sans-serif;
-}
+
 
 
 .banner {
