@@ -15,9 +15,15 @@ body {
     color: #333;
 }
 
-.hidden {
-    display: none;
+.banner {
+    transition: opacity 1s ease; /* Transition pour l'opacité sur 1 seconde */
 }
+
+.hidden {
+    opacity: 0; /* Réduit l'opacité à 0 pour un effet de fondu */
+    pointer-events: none; /* Ignore les événements de souris lorsque caché */
+}
+
 
 .banner {
     position: relative;
