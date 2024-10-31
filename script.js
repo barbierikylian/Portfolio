@@ -128,3 +128,8 @@ function sendMail() {
             console.error("Erreur :", error);
         });
 }
+document.addEventListener("scroll", function() {
+    const bannerContent = document.querySelector(".banner-content");
+    const scrolled = window.scrollY;
+    bannerContent.style.transform = "translateY(" + scrolled * 0.3 + "px)";
+});
