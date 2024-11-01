@@ -71,12 +71,6 @@ function setupFormValidation() {
     });
 }
 
-// Fonction de validation d'email
-function validateEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-
 // Effets de survol pour les compétences
 function setupSkillHoverEffects() {
     const skillBoxes = document.querySelectorAll('.skill-box');
@@ -113,7 +107,7 @@ backToTopButton.addEventListener('click', () => {
     });
 });
 
-// Fonction pour envoyer l'email via EmailJS
+// Fonction pour envoyer l'email
 function sendMail() {
     // Récupérer les valeurs des champs
     let name = document.getElementById("name").value.trim();
@@ -127,7 +121,8 @@ function sendMail() {
     }
 
     // Validation de l'adresse e-mail
-    if (!validateEmail(email)) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
         alert("Veuillez entrer une adresse e-mail valide.");
         return; // Arrêter l'envoi si l'e-mail est invalide
     }
