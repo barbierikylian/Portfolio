@@ -345,14 +345,25 @@ footer {
     color: white; /* Couleur du texte */
     text-decoration: none; /* Pas de soulignement */
     border-radius: 5px; /* Coins arrondis pour le bouton */
-    transition: background-color 0.3s; /* Transition pour le changement de couleur */
+    transition: background-color 0.3s, transform 0.3s; /* Transition pour le changement de couleur et effet de transformation */
     margin-top: 10px; /* Espace au-dessus du bouton */
+    font-size: 16px; /* Taille de la police */
+    font-weight: bold; /* Met le texte en gras */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour le bouton */
 }
 
 /* Couleur du bouton au survol */
 .btn-download:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Couleur de fond au survol */
+    transform: translateY(-2px); /* Légère élévation au survol */
 }
+
+/* Couleur du bouton au focus */
+.btn-download:focus {
+    outline: none; /* Supprime la bordure par défaut du focus */
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5); /* Ombre autour du bouton au focus */
+}
+
 
 
 /* Media Queries for responsiveness */
