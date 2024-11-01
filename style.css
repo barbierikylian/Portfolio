@@ -1,4 +1,3 @@
-/* Réinitialisation et style de base */
 * {
     margin: 0;
     padding: 0;
@@ -6,39 +5,46 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Active le défilement fluide */
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Choix de la police */
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Fond plus clair */
     color: #333;
-    overflow: hidden; /* Empêche le défilement quand la bannière est visible */
 }
 
-/* Styles de la bannière */
+.hidden {
+    display: none;
+}
+
 .banner {
-    position: fixed;
+    position: relative;
+    height: 100vh; /* Hauteur de la bannière */
+    overflow: hidden; /* Évite de montrer du contenu débordant */
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    right: 0;
+    bottom: 0;
     background: url('banniere.png') no-repeat center center;
     background-size: cover;
-    z-index: 10;
-    opacity: 1;
-    transition: opacity 1.5s ease-out;
+    transform: translateZ(0);
+    will-change: transform; /* Optimisation pour les performances */
+    z-index: 0; /* S'assurer que c'est derrière le contenu */
 }
 
 .banner-content {
+    position: relative;
     text-align: center;
-    color: #ffffff;
-    z-index: 11;
+    z-index: 1; /* Assure que le texte est au-dessus de l'arrière-plan */
 }
+
 
 .banner h1 {
     font-size: 3rem;
@@ -54,32 +60,20 @@ body {
     text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
 }
 
-.hidden {
-    display: none;
+.banner-content h1, .banner-content p {
+    animation: fadeIn 2s ease-in-out;
 }
 
-/* Animation de fade-out pour la bannière */
-.fade-out {
-    opacity: 0;
-    visibility: hidden;
-}
-
-/* Styles pour le reste du contenu */
-.main-content {
-    opacity: 0;
-    animation: contentFadeIn 1.5s ease-out forwards;
-    margin-top: 100vh; /* Pour commencer en-dessous de la bannière */
-}
-
-@keyframes contentFadeIn {
-    from {
+@keyframes fadeIn {
+    0% {
         opacity: 0;
+        transform: translateY(20px);
     }
-    to {
+    100% {
         opacity: 1;
+        transform: translateY(0);
     }
 }
-
 
 .container {
     max-width: 1200px;
