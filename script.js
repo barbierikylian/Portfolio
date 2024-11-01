@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const banner = document.querySelector('.banner'); // Sélectionne la bannière
 
         // Applique la transformation en fonction de la position de défilement
-        banner.style.transform = `translateY(${scrollPosition * 0.5}px)`; // Ajuste le facteur (0.5) pour modifier l'intensité de l'effet
+        banner.style.transform = 'translateY(${scrollPosition * 0.5}px)'; // Ajuste le facteur (0.5) pour modifier l'intensité de l'effet
 
         // Vérifie si la bannière est complètement défilée
         if (scrollPosition > banner.offsetHeight) {
