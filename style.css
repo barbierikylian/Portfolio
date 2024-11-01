@@ -181,6 +181,13 @@ h2 {
     font-size: 2em;
     text-align: center;
 }
+h4 {
+    margin-bottom: 15px;
+   color: #001f3f; /* Couleur du texte des titres */
+   font-size: 1em; /* Taille réduite de moitié */
+   text-align: center;
+}
+
 
 .project-box {
     background-color: #f8f8f8; /* Couleur grise claire pour les projets */
