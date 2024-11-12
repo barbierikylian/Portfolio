@@ -296,7 +296,6 @@ footer {
     padding-bottom: 40px;
 }
 
-/* CSS pour adapter le bouton sur tous les écrans */
 #backToTopButton {
     padding: 10px 20px; /* Espacement intérieur */
     font-size: 1em; /* Taille de la police adaptable */
@@ -308,13 +307,15 @@ footer {
     position: fixed; /* Positionner de manière fixe pour qu'il reste visible */
     bottom: 20px; /* Espace en bas de l'écran */
     left: 50%; /* Centrer horizontalement */
+    transform: translateX(-50%); /* Ajuster pour un centrage parfait */
+    transform-origin: center; /* Fixe le point de transformation au centre */
     z-index: 10; /* S'assurer qu'il soit au-dessus des autres éléments */
     transition: transform 0.3s ease; /* Animation douce pour l'effet au survol */
 }
 
 /* Effet au survol */
 #backToTopButton:hover {
-    transform: scale(1.1); /* Augmente légèrement la taille au survol */
+    transform: translateX(-50%) scale(1.1); /* Augmente légèrement la taille au survol tout en restant centré */
 }
 
 /* Styles adaptatifs */
