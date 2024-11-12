@@ -3,6 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+header .container h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+header .container h2, .speciality {
+    font-size: 1.5em;
+    color: #555;
+    margin: 0.2em 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #0056b3;
+}
+
 
 html {
     scroll-behavior: smooth; /* Active le défilement fluide */
