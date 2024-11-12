@@ -80,7 +80,7 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
-.detail-box.notion {
+.detail-box-notion {
     background-color: #f0f8ff; /* Couleur de fond douce */
     font-weight: bold; /* Texte en gras */
     color: #0056b3; /* Couleur de texte pour faire ressortir les notions */
