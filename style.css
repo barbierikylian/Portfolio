@@ -19,10 +19,12 @@ body {
     display: none;
 }
 
+/* Bannière avec effet de parallaxe */
 .banner {
     position: relative;
     height: 100vh; /* Hauteur de la bannière */
     overflow: hidden; /* Évite de montrer du contenu débordant */
+    perspective: 1px; /* Perspective pour créer l'illusion de profondeur */
 }
 
 .banner::before {
@@ -34,17 +36,18 @@ body {
     bottom: 0;
     background: url('banniere.png') no-repeat center center;
     background-size: cover;
-    transform: translateZ(0);
+    transform: translateZ(-1px) scale(2); /* La valeur négative crée l'effet de parallaxe */
     will-change: transform; /* Optimisation pour les performances */
     z-index: 0; /* S'assurer que c'est derrière le contenu */
 }
 
+/* Contenu de la bannière */
 .banner-content {
     position: relative;
     text-align: center;
     z-index: 1; /* Assure que le texte est au-dessus de l'arrière-plan */
+    padding-top: 40vh; /* Ajuste pour centrer verticalement */
 }
-
 
 .banner h1 {
     font-size: 3rem;
@@ -60,6 +63,7 @@ body {
     text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
 }
 
+/* Animation pour le contenu */
 .banner-content h1, .banner-content p {
     animation: fadeIn 2s ease-in-out;
 }
