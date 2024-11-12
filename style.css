@@ -115,66 +115,41 @@ button:hover {
     background-color: #ff851b; /* Couleur orange au survol */
     transform: scale(1.05);
 }
-/* Styles généraux pour les écrans de moins de 768px */
 @media (max-width: 768px) {
-    /* Conteneur de la navigation */
-    nav {
-        background-color: #001f3f;
-        padding: 10px;
-        display: flex;
-        justify-content: space-between; /* Aligne les éléments */
-        position: relative;
-    }
-
-    /* Bouton pour activer le menu sur mobile */
-    .menu-toggle {
-        display: block;
-        background-color: #001f3f;
-        color: white;
-        font-size: 1.5em;
-        border: none;
-        cursor: pointer;
-    }
-
-    /* Masque le menu de base, à activer via JavaScript */
-    nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: none; /* Masque le menu par défaut */
-        flex-direction: column; /* Affiche les liens en colonne */
-        width: 100%; /* Prend toute la largeur */
-        position: absolute;
-        top: 50px; /* Ajuste pour placer le menu sous le bouton */
-        background-color: #001f3f;
-    }
-
-    /* Affiche le menu lorsque activé */
-    nav ul.show {
-        display: flex;
-    }
-
-    /* Espacement des liens */
-    nav li {
-        margin: 10px 0;
-        text-align: center; /* Centre le texte */
-    }
-
-    nav a {
-        color: white;
-        text-decoration: none;
-        padding: 10px 20px;
-        border-radius: 50px;
-        background-color: rgba(255, 255, 255, 0.2);
-        transition: background-color 0.3s, color 0.3s;
-    }
-
-    nav a:hover {
-        background-color: rgba(255, 255, 255, 0.4);
-        color: #00BFFF;
-    }
+nav {
+    background-color: #001f3f; /* Couleur de fond */
+    padding: 10px; /* Espacement interne */
+    display: flex; /* Utilise flexbox */
+    justify-content: center; /* Centre le contenu horizontalement */
 }
 
+
+nav ul {
+    list-style-type: none; /* Enlève les puces */
+    margin: 0; /* Enlève les marges */
+    padding: 0; /* Enlève le padding */
+    display: flex; /* Affiche les éléments en ligne */
+}
+
+
+nav li {
+    margin: 0 10px; /* Espacement entre les liens */
+}
+
+nav a {
+    color: white; /* Couleur des liens */
+    text-decoration: none; /* Enlève le soulignement */
+    padding: 10px 20px; /* Espacement interne */
+    border-radius: 50px; /* Arrondir les coins pour créer des ovales */
+    background-color: rgba(255, 255, 255, 0.2); /* Couleur de fond avec transparence */
+    transition: background-color 0.3s, color 0.3s; /* Ajoute une transition douce */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Couleur de fond au survol */
+    color: #00BFFF; /* Couleur des liens au survol */
+}
+}
 
 
 
