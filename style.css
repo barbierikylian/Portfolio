@@ -526,7 +526,7 @@ input::placeholder, textarea::placeholder {
 }
 
 #currentTime {
-    font-size: 2em; /* Augmenter la taille de la police */
+    font-size: 1em; /* Augmenter la taille de la police */
     color: #ffffff; /* Couleur de l'heure */
     position: absolute; /* Positionner de manière absolue */
     top: 20px; /* Espace depuis le haut */
