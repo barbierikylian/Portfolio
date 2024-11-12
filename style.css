@@ -132,12 +132,14 @@ nav {
     justify-content: center; /* Centre le contenu horizontalement */
 }
 
+
 nav ul {
     list-style-type: none; /* Enlève les puces */
     margin: 0; /* Enlève les marges */
     padding: 0; /* Enlève le padding */
     display: flex; /* Affiche les éléments en ligne */
 }
+
 
 nav li {
     margin: 0 10px; /* Espacement entre les liens */
