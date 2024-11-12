@@ -3,6 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+header .container h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffffff; /* Blanc */
+}
+
+header .container h2 {
+    font-size: 1.5em;
+    color: #ffffff; /* Blanc */
+    margin: 0.2em 0;
+}
+
 .speciality {
     font-size: 1.5em;
     color: #4a6274; /* Bleu-gris pour harmoniser avec le bleu foncé */
