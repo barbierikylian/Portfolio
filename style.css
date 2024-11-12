@@ -474,13 +474,14 @@ input::placeholder, textarea::placeholder {
     z-index: 1; /* Above the background */
 }
 
-#currentTime {
+@media (max-width: 768px) {#currentTime {
     font-size: 2em; /* Augmenter la taille de la police */
     color: #ffffff; /* Couleur de l'heure */
     position: absolute; /* Positionner de manière absolue */
     top: 20px; /* Espace depuis le haut */
     left: 20px; /* Espace depuis la gauche */
     z-index: 10; /* S'assurer qu'il soit au-dessus des autres éléments */
+}
 }
 a {
     color: #00BFFF;
