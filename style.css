@@ -24,21 +24,9 @@ body {
     position: relative;
     height: 100vh; /* Hauteur de la bannière */
     overflow: hidden; /* Évite de montrer du contenu débordant */
-    perspective: 1px; /* Perspective pour créer l'illusion de profondeur */
-}
-
-.banner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background: url('banniere.png') no-repeat center center;
     background-size: cover;
-    transform: translateZ(-1px) scale(2); /* La valeur négative crée l'effet de parallaxe */
-    will-change: transform; /* Optimisation pour les performances */
-    z-index: 0; /* S'assurer que c'est derrière le contenu */
+    background-attachment: fixed; /* Fixe l'arrière-plan pour un effet de parallaxe */
 }
 
 /* Contenu de la bannière */
@@ -78,6 +66,7 @@ body {
         transform: translateY(0);
     }
 }
+
 
 .container {
     max-width: 1200px;
