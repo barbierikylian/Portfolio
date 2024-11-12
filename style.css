@@ -75,11 +75,10 @@ body {
     }
 }
 
-@media (max-width: 768px) {.container {
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-}
 }
 
 header {
@@ -115,7 +114,7 @@ button:hover {
     background-color: #ff851b; /* Couleur orange au survol */
     transform: scale(1.05);
 }
-@media (max-width: 768px) {nav {
+nav {
     background-color: #001f3f; /* Couleur de fond */
     padding: 10px; /* Espacement interne */
     display: flex; /* Utilise flexbox */
@@ -148,7 +147,7 @@ nav a:hover {
     background-color: rgba(255, 255, 255, 0.4); /* Couleur de fond au survol */
     color: #00BFFF; /* Couleur des liens au survol */
 }
-}
+
 
 
 .section-box {
@@ -284,7 +283,7 @@ footer {
     gap: 10px;
 }
 
-@media (max-width: 768px) {#backToTopButton {
+#backToTopButton {
     background-color: #ff4136; /* Couleur rouge pour le bouton retour */
     color: white;
     border: none;
@@ -300,7 +299,7 @@ footer {
 #backToTopButton:hover {
     background-color: #ff851b; /* Couleur orange au survol */
 }
-}
+
 .footer-main-content {
     text-align: center;
 }
@@ -474,14 +473,13 @@ input::placeholder, textarea::placeholder {
     z-index: 1; /* Above the background */
 }
 
-@media (max-width: 768px) {#currentTime {
+#currentTime {
     font-size: 2em; /* Augmenter la taille de la police */
     color: #ffffff; /* Couleur de l'heure */
     position: absolute; /* Positionner de manière absolue */
     top: 20px; /* Espace depuis le haut */
     left: 20px; /* Espace depuis la gauche */
     z-index: 10; /* S'assurer qu'il soit au-dessus des autres éléments */
-}
 }
 a {
     color: #00BFFF;
