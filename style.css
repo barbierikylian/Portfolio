@@ -285,6 +285,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 
 .footer-content {
@@ -292,6 +293,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    padding-bottom: 40px;
 }
 
 /* CSS pour adapter le bouton sur tous les écrans */
@@ -442,6 +444,7 @@ footer {
     }
 
     nav.menu ul li {
+        margin: 10px 0;
         padding: 5px 0;
     }
 }
