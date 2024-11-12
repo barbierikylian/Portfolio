@@ -294,23 +294,28 @@ footer {
     gap: 10px;
 }
 
+/* CSS pour adapter le bouton sur tous les écrans */
 #backToTopButton {
-    background-color: #ff4136; /* Couleur rouge pour le bouton retour */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+    padding: 10px 20px; /* Espacement intérieur */
+    font-size: 1em; /* Taille de la police adaptable */
+    background-color: #4CAF50; /* Couleur de fond */
+    color: #ffffff; /* Couleur du texte */
+    border: none; /* Enlever les bordures */
+    border-radius: 5px; /* Arrondir les coins */
+    cursor: pointer; /* Changer le curseur au survol */
+    position: fixed; /* Positionner de manière fixe pour qu'il reste visible */
+    bottom: 20px; /* Espace en bas de l'écran */
+    right: 20px; /* Espace à droite de l'écran */
+    z-index: 10; /* S'assurer qu'il soit au-dessus des autres éléments */
+    transition: transform 0.3s ease; /* Animation douce pour l'effet au survol */
 }
 
+/* Effet au survol */
 #backToTopButton:hover {
-    transform: scale(1.1);
-    background-color: #ff851b; /* Couleur orange au survol */
+    transform: scale(1.1); /* Augmente légèrement la taille au survol */
 }
+
+/* Styles adaptatifs */
 @media (max-width: 600px) {
     #backToTopButton {
         padding: 8px 16px; /* Réduire l'espace intérieur sur petits écrans */
@@ -319,6 +324,7 @@ footer {
         right: 15px; /* Ajuster l'espace à droite */
     }
 }
+
 
 .footer-main-content {
     text-align: center;
@@ -436,7 +442,7 @@ footer {
     }
 
     nav.menu ul li {
-        padding: 3px 0;
+        padding: 5px 0;
     }
 }
 
