@@ -80,7 +80,16 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
-
+.detail-box.notion {
+    background-color: #f0f8ff; /* Couleur de fond douce */
+    font-weight: bold; /* Texte en gras */
+    color: #0056b3; /* Couleur de texte pour faire ressortir les notions */
+    border-radius: 5px; /* Bords arrondis */
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: inline-block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
 header {
     background-color: #001f3f; /* Couleur sombre pour le header */
     color: white;
