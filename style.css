@@ -310,12 +310,12 @@ footer {
     transform: translateX(-50%); /* Ajuster pour un centrage parfait */
     transform-origin: center; /* Fixe le point de transformation au centre */
     z-index: 10; /* S'assurer qu'il soit au-dessus des autres éléments */
-    transition: box-shadow 0.3s ease; /* Animation douce pour l'effet au survol */
+    transition: background-color 0.3s ease; /* Transition de couleur de fond au lieu de box-shadow */
 }
 
-/* Effet au survol */
+/* Effet au survol avec changement de couleur de fond */
 #backToTopButton:hover {
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Ajouter une ombre au survol */
+    background-color: #45a049; /* Changer la couleur de fond au survol */
 }
 
 /* Styles adaptatifs */
