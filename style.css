@@ -19,7 +19,7 @@ body {
     display: none;
 }
 
-@media (max-width: 768px) {.banner {
+.banner {
     position: relative;
     height: 100vh; /* Hauteur de la bannière */
     overflow: hidden; /* Évite de montrer du contenu débordant */
@@ -63,7 +63,7 @@ body {
 .banner-content h1, .banner-content p {
     animation: fadeIn 2s ease-in-out;
 }
-}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
