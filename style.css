@@ -308,7 +308,16 @@ footer {
 }
 
 #backToTopButton:hover {
+    transform: scale(1.1);
     background-color: #ff851b; /* Couleur orange au survol */
+}
+@media (max-width: 600px) {
+    #backToTopButton {
+        padding: 8px 16px; /* Réduire l'espace intérieur sur petits écrans */
+        font-size: 0.9em; /* Diminuer légèrement la taille de police */
+        bottom: 15px; /* Ajuster l'espace en bas */
+        right: 15px; /* Ajuster l'espace à droite */
+    }
 }
 
 .footer-main-content {
