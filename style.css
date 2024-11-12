@@ -45,7 +45,6 @@ body {
     z-index: 1; /* Assure que le texte est au-dessus de l'arrière-plan */
 }
 
-
 .banner h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -79,17 +78,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-}
-/* Mise en valeur des notions */
-.detail-box.notion {
-    background-color: #f0f8ff; /* Couleur de fond douce */
-    font-weight: bold; /* Texte en gras */
-    color: #0056b3; /* Couleur de texte pour faire ressortir les notions */
-    border-radius: 5px; /* Bords arrondis */
-    padding: 5px 10px;
-    margin-top: 10px;
-    display: inline-block;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre douce */
 }
 
 header {
@@ -125,6 +113,7 @@ button:hover {
     background-color: #ff851b; /* Couleur orange au survol */
     transform: scale(1.05);
 }
+
 nav {
     background-color: #001f3f; /* Couleur de fond */
     padding: 10px; /* Espacement interne */
@@ -132,14 +121,12 @@ nav {
     justify-content: center; /* Centre le contenu horizontalement */
 }
 
-
 nav ul {
     list-style-type: none; /* Enlève les puces */
     margin: 0; /* Enlève les marges */
     padding: 0; /* Enlève le padding */
     display: flex; /* Affiche les éléments en ligne */
 }
-
 
 nav li {
     margin: 0 10px; /* Espacement entre les liens */
@@ -159,189 +146,6 @@ nav a:hover {
     color: #00BFFF; /* Couleur des liens au survol */
 }
 
-
-
-.section-box {
-    background-color: white; /* Fond blanc pour les sections */
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px 0;
-    transition: transform 0.3s ease;
-}
-.section-box {
-    opacity: 1;
-    transform: translateY(20px);
-    animation: fadeIn 1s forwards;
-}
-@keyframes fadeIn {
-    to {
-        opacity: 0;
-        transform: translateY(0);
-    }
-}
-
-
-.section-box:hover {
-    transform: translateY(-5px);
-}
-
-h2 {
-    margin-bottom: 15px;
-    color: #001f3f; /* Couleur du texte des titres */
-    font-size: 2em;
-    text-align: center;
-}
-h4 {
-    margin-bottom: 15px;
-   color: #001f3f; /* Couleur du texte des titres */
-   font-size: 1,5em; /* Taille réduite de moitié */
-   text-align: center;
-}
-
-
-.project-box {
-    background-color: #f8f8f8; /* Couleur grise claire pour les projets */
-    border-radius: 8px;
-    padding: 15px;
-    margin: 10px;
-    transition: transform 0.3s ease;
-}
-
-.project-box:hover {
-    transform: scale(1.03);
-}
-
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.skill-box {
-    background-color: #007bff; /* Couleur bleue pour les compétences */
-    color: white;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 5px;
-    text-align: center;
-    flex: 1 0 20%;
-    transition: transform 0.3s ease;
-}
-
-.skill-box:hover {
-    transform: scale(1.05);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form label {
-    margin-top: 10px;
-}
-
-form input, form textarea {
-    width: 80%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-.arrow-container {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.arrow-container i {
-    font-size: 2em; /* Taille de la flèche */
-    color: #007bff; /* Couleur de la flèche */
-    animation: bounce 1s infinite; /* Animation de rebond */
-}
-
-/* Animation de rebond */
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px); /* Décale vers le haut */
-    }
-}
-
-
-form button {
-    margin-top: 20px;
-}
-
-footer {
-    background-color: #001f3f; /* Couleur sombre pour le footer */
-    color: white;
-    padding: 20px;
-    margin-top: 20px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-#backToTopButton {
-    background-color: #ff4136; /* Couleur rouge pour le bouton retour */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-}
-
-#backToTopButton:hover {
-    background-color: #ff851b; /* Couleur orange au survol */
-}
-
-.footer-main-content {
-    text-align: center;
-}
-
-.footer-contact {
-    display: block;
-    margin-bottom: 10px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.footer-contact:hover {
-    text-decoration: underline;
-}
-
-/* Animation for sections */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.section-box {
-    animation: fadeIn 0.5s ease-in-out;
-}
 /* Styles pour la section "À Propos" */
 .section-boxx {
     display: flex; /* Active le flexbox */
@@ -355,35 +159,6 @@ footer {
     text-align: center; /* Centre le texte */
 }
 
-/* Styles pour le bouton de téléchargement */
-.btn-download {
-    display: inline-block; /* Définit le bouton comme élément en ligne pour centrer */
-    padding: 10px 20px; /* Espacement interne */
-    background-color: #4CAF50; /* Couleur de fond du bouton */
-    color: white; /* Couleur du texte */
-    text-decoration: none; /* Pas de soulignement */
-    border-radius: 5px; /* Coins arrondis pour le bouton */
-    transition: background-color 0.3s, transform 0.3s; /* Transition pour le changement de couleur et effet de transformation */
-    margin-top: 10px; /* Espace au-dessus du bouton */
-    font-size: 16px; /* Taille de la police */
-    font-weight: bold; /* Met le texte en gras */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour le bouton */
-}
-
-/* Couleur du bouton au survol */
-.btn-download:hover {
-    background-color: #45a049; /* Couleur de fond au survol */
-    transform: translateY(-2px); /* Légère élévation au survol */
-}
-
-/* Couleur du bouton au focus */
-.btn-download:focus {
-    outline: none; /* Supprime la bordure par défaut du focus */
-    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5); /* Ombre autour du bouton au focus */
-}
-
-
-
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
     header h1 {
@@ -396,6 +171,15 @@ footer {
 
     form input, form textarea {
         width: 90%;
+    }
+
+    nav.menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav.menu ul li {
+        margin: 5px 0;
     }
 }
 
@@ -411,27 +195,11 @@ footer {
     button {
         width: 100%;
     }
-}
-@media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 1.8em;
+
+    .banner {
+        padding: 15px 0;
     }
 
-    header p {
-        font-size: 1em;
-    }
-
-    nav.menu ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav.menu ul li {
-        margin: 5px 0;
-    }
-}
-
-@media screen and (max-width: 480px) {
     header h1 {
         font-size: 1.5em;
     }
@@ -448,81 +216,6 @@ footer {
     nav.menu ul li {
         margin: 5px 0;
     }
-
-    .banner {
-        padding: 15px 0;
-    }
-}
-
-/* Additional styles for aesthetics */
-.section-box {
-    position: relative;
-}
-
-.section-box::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 5px;
-    background: linear-gradient(to right, #007bff, #ff4136); /* Dégradé de couleurs */
-    border-radius: 10px;
-}
-
-h2 {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-h4 {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-.project-box::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 5px;
-    background: #007bff; /* Couleur bleue pour les projets */
-    border-radius: 8px 8px 0 0;
-}
-
-.project-box:hover::before {
-    background: #ff4136; /* Couleur rouge au survol */
-}
-
-button:focus {
-    outline: none;
-    box-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
-}
-
-form input:focus, form textarea:focus {
-    border: 1px solid #007bff;
-}
-
-/* More subtle styles for better user experience */
-input::placeholder, textarea::placeholder {
-    color: #aaa;
-    opacity: 1;
-}
-
-.skill-box {
-    position: relative;
-}
-
-.skill-box::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    background: rgba(0, 0, 0, 0.1);
-    z-index: 0;
-}
-
-.skill-box span {
-    position: relative;
-    z-index: 1; /* Above the background */
 }
 
 #currentTime {
@@ -532,7 +225,4 @@ input::placeholder, textarea::placeholder {
     top: 20px; /* Espace depuis le haut */
     left: 20px; /* Espace depuis la gauche */
     z-index: 10; /* S'assurer qu'il soit au-dessus des autres éléments */
-}
-a {
-    color: #00BFFF;
 }
