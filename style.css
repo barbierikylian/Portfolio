@@ -19,7 +19,7 @@ body {
     display: none;
 }
 
-.banner {
+@media (max-width: 768px) {.banner {
     position: relative;
     height: 100vh; /* Hauteur de la bannière */
     overflow: hidden; /* Évite de montrer du contenu débordant */
@@ -63,7 +63,7 @@ body {
 .banner-content h1, .banner-content p {
     animation: fadeIn 2s ease-in-out;
 }
-
+}
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -115,7 +115,7 @@ button:hover {
     background-color: #ff851b; /* Couleur orange au survol */
     transform: scale(1.05);
 }
-nav {
+@media (max-width: 768px) {nav {
     background-color: #001f3f; /* Couleur de fond */
     padding: 10px; /* Espacement interne */
     display: flex; /* Utilise flexbox */
@@ -148,7 +148,7 @@ nav a:hover {
     background-color: rgba(255, 255, 255, 0.4); /* Couleur de fond au survol */
     color: #00BFFF; /* Couleur des liens au survol */
 }
-
+}
 
 
 .section-box {
