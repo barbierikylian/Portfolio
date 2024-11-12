@@ -3,17 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-header .container h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #2e2e2e; /* Gris anthracite pour un contraste élégant */
-}
 
-header .container h2 {
-    font-size: 1.5em;
-    color: #5a5a5a; /* Gris clair */
-    margin: 0.2em 0;
-}
 
 .speciality {
     font-size: 1.5em;
