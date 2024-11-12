@@ -310,12 +310,12 @@ footer {
     transform: translateX(-50%); /* Ajuster pour un centrage parfait */
     transform-origin: center; /* Fixe le point de transformation au centre */
     z-index: 10; /* S'assurer qu'il soit au-dessus des autres éléments */
-    transition: transform 0.3s ease; /* Animation douce pour l'effet au survol */
+    transition: box-shadow 0.3s ease; /* Animation douce pour l'effet au survol */
 }
 
 /* Effet au survol */
 #backToTopButton:hover {
-    transform: translateX(-50%) scale(1.1); /* Augmente légèrement la taille au survol tout en restant centré */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Ajouter une ombre au survol */
 }
 
 /* Styles adaptatifs */
