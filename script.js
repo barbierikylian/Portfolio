@@ -138,6 +138,7 @@ function sendMail() {
     emailjs.send("service_i6syx6e", "template_ky10udl", params)
         .then(() => {
             alert("Email envoyé avec succès !");
+            alert("Vous recevrez également une copie de cet Email. Si vous ne le voyez pas dans votre boîte de réception, merci de vérifier vos courriers indésirables.")
             document.getElementById("contactForm").reset(); // Réinitialiser le formulaire après envoi
         })
         .catch(error => {
