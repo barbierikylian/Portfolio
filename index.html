@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <title>Kylian BARBIERI- Portfolio</title>
+    <title>Kylian BARBIERI -Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js" defer></script>
@@ -22,7 +22,7 @@
 <body>  
     <header>
         <div class="container">
-            <div id="currentTime"></div> <!-- Élément pour l'heure -->
+            <!--<div id="currentTime"></div> -->
             <h1>Kylian BARBIERI</h1>
             <h2>Étudiant en 2ème année de cycle préparatoire intégré</h2>
             <p class="speciality">Spécialité : Informatique</p>
@@ -73,6 +73,20 @@
                         <div class="detail-box notion">Thèmes abordés : HTML, CSS, Javascript, Github, Responsive Design, Accessibilité Web</div>
                     </div>  
                 </div>
+                <div class="project-box">
+                    <h3>Réseaux et systèmes</h3>
+                    <div class="details-container">
+                        <div class="detail-box">Gestion d'un réseau de plusieurs entreprises permettant l'accès à un réseau stable et sécurisé.</div>
+                        <div class="detail-box notion">Thèmes abordés : Adressage IP/NAT, Plan d'adressage, Commutation/Ethernet, Protocoles de couches hautes, Environnement client Linux, Troubleshooting</div>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <h3>Développement Web</h3>
+                    <div class="details-container">
+                        <div class="detail-box">Création d'une plateforme de recherche de stage.</div>
+                        <div class="detail-box notion">Thèmes abordés : PHP, Configuration de serveurs web, Design patterns, Administration Apache/http, Backend/Frontend, Requêtage</div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -84,7 +98,7 @@
                 <div class="skill-box">Gestion de projet</div>
                 <div class="skill-box">Pack Office : <br>Word, Excel...</div>
                 <div class="skill-box">Programmation : <br>Python, C, C++</div>
-                <div class="skill-box">Développement web : <br>HTML, CSS, Javascript</div>
+                <div class="skill-box">Développement web : <br>HTML, CSS, Javascript, PHP</div>
                 <div class="skill-box">Systèmes embarqués : <br>Microcontrôleurs (Arduino UNO...) </div>
                 <div class="skill-box">Bases de données : <br>MySQL</div>
                 <div class="skill-box">Outils de versionnage : <br>Git, GitHub</div>
@@ -122,7 +136,7 @@
             </div>            
             <form id="contactForm">
                 <label for="name">Nom :</label>
-                <textarea id="name" name="name" required rows="4" cols="50" placeholder="Nom"></textarea> 
+                <textarea id="name" name="name" required rows="4" cols="50" placeholder="Nom / Entreprise"></textarea> 
                 <label for="email">Email :</label>
                 <textarea id="email" name="email" required rows="4" cols="50" required placeholder="Mail"></textarea>
                 <label for="message">Message :</label>
