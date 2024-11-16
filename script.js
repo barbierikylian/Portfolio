@@ -22,14 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Fonction pour mettre à jour l'heure
-function updateTime() {
-    const now = new Date();
-    const options = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
-    const formattedTime = now.toLocaleTimeString('fr-FR', options); // Format français
-    document.getElementById('currentTime').innerText = formattedTime;
-}
-
 // Animations pour les sections
 function initAnimations() {
     const sections = document.querySelectorAll('.section-box');
