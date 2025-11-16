@@ -89,7 +89,7 @@ body {
 
 
 header {
-    background-color: #001f3f; /* Couleur sombre pour le header */
+    background-color: #A2E0CD; /* Couleur sombre pour le header */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -122,7 +122,7 @@ button:hover {
     transform: scale(1.05);
 }
 nav {
-    background-color: #001f3f; /* Couleur de fond */
+    background-color: #A2E0CD; /* Couleur de fond */
     padding: 10px; /* Espacement interne */
     display: flex; /* Utilise flexbox */
     justify-content: center; /* Centre le contenu horizontalement */
@@ -207,6 +207,24 @@ h4 {
 .project-box:hover {
     transform: scale(1.03);
 }
+.gh-links {
+  display: flex;
+  gap: .6rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: .4rem 0 .8rem;
+}
+
+.btn-gh {
+  padding: .4rem .7rem;
+  border: 1px solid #ddd;
+  border-radius: .5rem;
+  text-decoration: none;
+  font-size: .9rem;
+}
+
+.btn-gh:hover { background: #f5f5f5; }
+.gh-meta { color: #666; font-size: .85rem; }
 
 .skills-container {
     display: flex;
